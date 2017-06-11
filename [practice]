@@ -1,0 +1,25 @@
+// Algorithm for finding next largest element in an array using stack data structure:
+
+Let input array be 'arr[]' and size of array be 'n'
+find next greatest element of every element 
+
+ step 1 : Create an empty stack (S) in which we store the indexes
+          and NG[] that is user to store the indexes of NGE
+          of every element.
+
+ step 2 : Traverse the array in reverse order 
+            where i goes from (n-1 to 0)
+
+        a) While S is nonempty and the top element of 
+           S is smaller than or equal to 'arr[i]':
+              pop S
+
+        b) If S is empty 
+             arr[i] has no greater element
+             NG[i] = -1
+
+        c) else we have next greater element
+             NG[i] = S.top() // here we store the index of NGE
+
+        d). push current element index in stack 
+           S.push(i)
