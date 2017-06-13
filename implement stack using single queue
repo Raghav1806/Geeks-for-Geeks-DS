@@ -1,0 +1,10 @@
+// x is the element to be pushed and s is stack
+push(s, x) 
+  1) Let size of q be s. 
+  2) Enqueue x to q
+  3) One by one Dequeue s items from queue and enqueue them.
+  
+// Removes an item from stack
+pop(s)
+  1) Dequeue an item from q
+
