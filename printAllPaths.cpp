@@ -53,7 +53,7 @@ void printPathsRecur(struct Node *root, int path[], int pathLen){
 	}
 }
 
-void printPaths(struct Node *root){
+void printPaths(struct Node *root){ 
 	int path[1000];
 	printPathsRecur(root, path, 0);
 }
